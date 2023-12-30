@@ -142,7 +142,6 @@ with io.open(filename, 'rb') as f:
     enc_data = f.read()
 
 if enc_data[:len(RESDATA_SIGN)] == RESDATA_SIGN:
-
     # Decrypt Defender ResourceData
     print('Defender ResourceData file')
     data = decrypt_resdata(enc_data)
